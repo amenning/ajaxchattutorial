@@ -49,6 +49,11 @@ class Chat
 			AS posted_on FROM chat ORDER BY message_id DESC LIMIT 50) AS Last50
 			ORDER_BY message_id ASC';
 		}
+		
+		$result = $this->mysqli->query($query);
+		
+		//XML response
+		
 	}
 	
 }
